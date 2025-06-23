@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Photo Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" src="script.js" defer>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🪪 Passport Photo Generator</h1>
+            <p>Convert your photos to perfect passport size (600x600) with professional white background</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="upload-section">
+                <div class="upload-box" onclick="document.getElementById('file-input').click()">
+                    <div class="upload-icon">📷</div>
+                    <h3>Click to Upload Your Photo</h3>
+                    <p>Or drag and drop your image here</p>
+                    <p style="font-size: 0.9em; color: #666; margin-top: 15px;">
+                        Supported formats: JPG, PNG, WEBP, GIF, BMP (Max 10MB)
+                    </p>
+                </div>
+                
+                <input type="file" id="file-input" accept=".jpg,.jpeg,.png,.webp,.gif,.bmp" />
+                
+                <div class="progress-container" id="progress-container">
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="status-message" id="status-message"></div>
+            </div>
+            
+            <div class="preview-section" id="preview-section">
+                <h2>🎉 Processing Complete!</h2>
+                <div class="image-preview" id="image-preview"></div>
+                
+                <div class="download-section" style="display: none;" id="download-section">
+                    <h3>✅ Your passport photo is ready!</h3>
+                    <p>The image has been converted to standard 600x600 pixels with a professional white background.</p>
+                    <button class="btn" id="download-btn" onclick="downloadImage()">
+                        📥 Download Passport Photo
+                    </button>
+                    <button class="btn" onclick="resetApp()" style="background: linear-gradient(135deg, #6c757d, #495057);">
+                        🔄 Process Another Photo
+                    </button>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Perfect Dimensions</h3>
+                    <p>Automatically converts to standard 600x600 passport photo dimensions that meet international requirements.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Professional Background</h3>
+                    <p>Adds clean white background suitable for official documents and passport applications.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Processing</h3>
+                    <p>Fast, high-quality image processing with no waiting time. Get your passport photo in seconds.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy Protected</h3>
+                    <p>All processing happens locally in your browser. Your photos never leave your device.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💾</div>
+                    <h3>High Quality Output</h3>
+                    <p>Maintains image quality while optimizing for official document requirements.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices - desktop, tablet, and mobile phones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Passport Photo Generator. All rights reserved.</p>
+        <p>Created with ❤️ by Anvesh Singh </p>
+        <p>anveshsingh0612@gmail.com</p>
+    </div>
+</body>
+</html>
