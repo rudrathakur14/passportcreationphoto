@@ -1,4 +1,4 @@
-         let processedImageUrl = '';
+let processedImageUrl = '';
 let originalFileName = '';
 
 // File input handling
